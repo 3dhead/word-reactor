@@ -463,6 +463,9 @@ Main.prototype = {
 		circleContainer.addEventListener("click",function(e) {
 			callback();
 		},false);
+		circleContainer.addEventListener("touchstart",function(e1) {
+			callback();
+		},false);
 		circleContainer.innerHTML = innerHTML;
 		var ball = this.createNapeBall(size,startX,startY);
 		((function($this) {
